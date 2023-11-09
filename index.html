@@ -8,10 +8,13 @@
 <body>
 <script>
     function fast (){
+    var user = 0;
+    var ID =0;
+    var userID = 0;
     var userID = prompt("あなたはサイトの作成者ですか(yes=y,no=n)入力後空白でエンターキーを押して下さい。");
     if(userID =="y" || userID == "n" || userID == "yes" || userID == "no"){
-        var ID = 1
-    }else{
+        var ID = 1        //答えたらIDを1にする。
+    }else{                //答えてない場合は最初に戻す
     fast();
     } 
     if(userID=="y" || userID=="yes"){
