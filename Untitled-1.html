@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたはこのサイトの作成者ですか？</title>
+</head>
+<body>
+<script>
+    function fast (){
+    var userID = prompt("あなたはサイトの作成者ですか(yes=y,no=n)");
+    if(userID =="y" || userID == "n" || userID == "yes" || userID == "no"){
+        var ID = 1
+    }else{
+    fast();
+    } 
+    if(userID=="y" || userID=="yes"){
+        var user = 1;
+    }
+    if(userID=="n" || userID=="no"){
+        var user = 2;
+    }
+    if(user=="1"){
+        var username = prompt("ユーザー名は？");
+    }
+    if(user=="2"){
+        window.location.href = 'https://www.google.com';
+    }
+    if(username == "test"){
+        user = 3;
+    }else{
+        fast();
+    }
+    if(user == "3"){
+        var pass = prompt("パスワードは？");
+    if(pass == "test"){
+        window.location.href = 'https://www.google.com';
+    }else{
+        fast();
+    }
+    }
+
+
+}
+fast();
+
+</script>
+</body>
+</html>
